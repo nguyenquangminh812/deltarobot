@@ -27,7 +27,7 @@ while True:
             # Draw a small circle (of radius 1) to show the center.
             cv2.circle(img, (a, b), 1, (0, 0, 255), 3)
             cv2.imshow('Imaetest',img)
-    k = cv2.waitkey(1)
+    k = cv2.waitKey(1)
     if k != -1:
         break
 
