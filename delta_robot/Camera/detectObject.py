@@ -1,7 +1,12 @@
 import cv2
 import numpy as np
+import serial
+import time
+import serial.tools.list_ports
 
 cam = cv2.VideoCapture(0)
+ser1 = serial.Serial('/dev/ttyUSB0',115200, timeout = 1)
+ser1.reset_input_buffer()
 
 while True:
     ret,image = cam.read()
