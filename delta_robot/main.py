@@ -7,6 +7,7 @@ from fk import FKinem
 from draw_trajec import draw_line
 
 ser1 = serial.Serial('/dev/ttyACM0',9600, timeout = 1)
+
 while True:
 	cur_point=[100,100,150]
 	tar_point=[-150,-120,160] 
